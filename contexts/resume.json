@@ -9,6 +9,7 @@
 	"navbar":
 	{
 		"title": "Clarence Taylor",
+		"picture": "resume_template/img/profile.jpg",
 		"links":[
 			{
 				"name": "About",
