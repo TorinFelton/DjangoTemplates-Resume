@@ -158,7 +158,7 @@
             <li>
               <i class="fa-li fa {{ award.icon }} text-warning"></i>
               {% if award.place|length != 0 %}
-                {{ award.place }} Place - 
+                {{ award.place }} <sup>{{ award.p_ending }}</sup> Place - 
               {% endif %}
 
               {{ award.name }}</li>
