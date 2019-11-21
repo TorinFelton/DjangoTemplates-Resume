@@ -207,37 +207,44 @@
 			{
 				"icon": "fa-trophy",
 				"name": "Google Analytics Certified Developer",
-				"place": ""
+				"place": "",
+				"p_ending": ""
 			},
 			{
 				"icon": "fa-trophy",
 				"name": "Mobile Web Specialist - Google Certification",
-				"place": ""
+				"place": "",
+				"p_ending": ""
 			},
 			{
 				"icon": "fa-trophy",
 				"name": "University of Colorado Boulder - Emerging Tech Competition 2009",
-				"place": "1<sup>st</sup>"
+				"place": "1",
+				"p_ending": "st"
 			},
 			{
 				"icon": "fa-trophy",
 				"name": "University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)",
-				"place": "1<sup>st</sup>"
+				"place": "1",
+				"p_ending": "st"
 			},
 			{
 				"icon": "fa-trophy",
 				"name": "University of Colorado Boulder - Emerging Tech Competition 2008",
-				"place": "2<sup>nd</sup>"
+				"place": "2",
+				"p_ending": "nd"
 			},
 			{
 				"icon": "fa-trophy",
 				"name": "James Buchanan High School - Hackathon 2006",
-				"place": "1<sup>st</sup>"
+				"place": "1",
+				"p_ending": "st"
 			},
 			{
 				"icon": "fa-trophy",
 				"name": "James Buchanan High School - Hackathon 2005",
-				"place": "3<sup>rd</sup>"
+				"place": "3",
+				"p_ending": "rd"
 			}
 		]
 	}
