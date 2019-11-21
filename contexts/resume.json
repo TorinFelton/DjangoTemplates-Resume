@@ -122,7 +122,7 @@
 		"title": "Skills",
 		"programming_languages":
 		{
-			"title": "Programming Languages &amp; Tools",
+			"title": "Programming Languages & Tools",
 			"contents":[
 				{
 					"icon": "fa-html5"
@@ -173,7 +173,7 @@
 				},
 				{
 					"icon": "fa-check",
-					"title": "Cross Browser Testing &amp; Debugging"
+					"title": "Cross Browser Testing & Debugging"
 				},
 				{
 					"icon": "fa-check",
@@ -181,7 +181,7 @@
 				},
 				{
 					"icon": "fa-check",
-					"title": "Agile Development &amp; Scrum"
+					"title": "Agile Development & Scrum"
 				}
 			]
 		}
@@ -202,7 +202,7 @@
 
 	"awards":
 	{
-		"title": "Awards &amp; Certifications",
+		"title": "Awards & Certifications",
 		"awards_list":[
 			{
 				"icon": "fa-trophy",
