@@ -70,6 +70,7 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 * Torin Felton
 * https://github.com/TorinFelton/
 * torinbrody1@gmail.com
+* https://twitter.com/DefineTorin
 
 ## Copyright and License
 
