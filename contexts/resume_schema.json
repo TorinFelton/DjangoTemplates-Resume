@@ -1,0 +1,668 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "Resume Page",
+  "required": [
+    "page",
+    "navbar",
+    "about",
+    "experience",
+    "education",
+    "skills",
+    "interests",
+    "awards"
+  ],
+  "properties": {
+    "page": {
+      "$id": "#/properties/page",
+      "type": "object",
+      "title": "Page Details",
+      "required": [
+        "title",
+        "author",
+        "description"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/properties/page/properties/title",
+          "type": "string",
+          "title": "Page Title",
+          "default": "",
+          "examples": [
+            "Resume - Start Bootstrap Theme"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "author": {
+          "$id": "#/properties/page/properties/author",
+          "type": "string",
+          "title": "Page Author",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "description": {
+          "$id": "#/properties/page/properties/description",
+          "type": "string",
+          "title": "Page Description",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "navbar": {
+      "$id": "#/properties/navbar",
+      "type": "object",
+      "title": "Navigation Bar",
+      "required": [
+        "title",
+        "picture",
+        "links"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/properties/navbar/properties/title",
+          "type": "string",
+          "title": "Navbar Title",
+          "default": "",
+          "examples": [
+            "Clarence Taylor"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "picture": {
+          "$id": "#/properties/navbar/properties/picture",
+          "type": "string",
+          "title": "Profile Picture",
+          "default": "",
+          "media": {
+            "binaryEncoding": "base64",
+            "type": "img/png"
+          },
+          "examples": [
+            "resume_template/img/profile.jpg"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "links": {
+          "$id": "#/properties/navbar/properties/links",
+          "type": "array",
+          "title": "Navbar Links",
+          "items": {
+            "$id": "#/properties/navbar/properties/links/items",
+            "type": "object",
+            "title": "Link Button",
+            "required": [
+              "name",
+              "href"
+            ],
+            "properties": {
+              "name": {
+                "$id": "#/properties/navbar/properties/links/items/properties/name",
+                "type": "string",
+                "title": "Link Name",
+                "default": "",
+                "examples": [
+                  "About"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "href": {
+                "$id": "#/properties/navbar/properties/links/items/properties/href",
+                "type": "string",
+                "title": "Link",
+                "default": "",
+                "format": "url",
+                "examples": [
+                  "#about"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "about": {
+      "$id": "#/properties/about",
+      "type": "object",
+      "title": "About Section",
+      "required": [
+        "first_name",
+        "second_name",
+        "location",
+        "phone",
+        "email",
+        "description",
+        "icon_links"
+      ],
+      "properties": {
+        "first_name": {
+          "$id": "#/properties/about/properties/first_name",
+          "type": "string",
+          "title": "First Name",
+          "default": "",
+          "examples": [
+            "Clarence"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "second_name": {
+          "$id": "#/properties/about/properties/second_name",
+          "type": "string",
+          "title": "Second Name",
+          "default": "",
+          "examples": [
+            "Taylor"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "location": {
+          "$id": "#/properties/about/properties/location",
+          "type": "string",
+          "title": "Location",
+          "default": "",
+          "examples": [
+            "3542 Berry Street · Cheyenne Wells, CO 80810"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "phone": {
+          "$id": "#/properties/about/properties/phone",
+          "type": "string",
+          "title": "Phone Number",
+          "default": "",
+          "examples": [
+            "(317) 585-8468"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "email": {
+          "$id": "#/properties/about/properties/email",
+          "type": "string",
+          "title": "Email Address",
+          "default": "",
+          "format": "email",
+          "examples": [
+            "name@email.com"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "description": {
+          "$id": "#/properties/about/properties/description",
+          "type": "string",
+          "title": "Description",
+          "default": "",
+          "examples": [
+            "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+          ],
+          "pattern": "^(.*)$"
+        },
+        "icon_links": {
+          "$id": "#/properties/about/properties/icon_links",
+          "type": "array",
+          "title": "Icon Links",
+          "items": {
+            "$id": "#/properties/about/properties/icon_links/items",
+            "type": "object",
+            "title": "Icon Link",
+            "required": [
+              "icon",
+              "href"
+            ],
+            "properties": {
+              "icon": {
+                "$id": "#/properties/about/properties/icon_links/items/properties/icon",
+                "type": "string",
+                "title": "Icon",
+                "default": "",
+                "examples": [
+                  "fa-linkedin-in"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "href": {
+                "$id": "#/properties/about/properties/icon_links/items/properties/href",
+                "type": "string",
+                "title": "Link",
+                "default": "",
+                "format": "url",
+                "examples": [
+                  "#"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "experience": {
+      "$id": "#/properties/experience",
+      "type": "object",
+      "title": "Experience Section",
+      "required": [
+        "title",
+        "jobs"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/properties/experience/properties/title",
+          "type": "string",
+          "title": "Experiences Title",
+          "default": "",
+          "examples": [
+            "Experience"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "jobs": {
+          "$id": "#/properties/experience/properties/jobs",
+          "type": "array",
+          "title": "Jobs Experience",
+          "items": {
+            "$id": "#/properties/experience/properties/jobs/items",
+            "type": "object",
+            "title": "Job",
+            "required": [
+              "title",
+              "company",
+              "description",
+              "date"
+            ],
+            "properties": {
+              "title": {
+                "$id": "#/properties/experience/properties/jobs/items/properties/title",
+                "type": "string",
+                "title": "Job Title",
+                "default": "",
+                "examples": [
+                  "Senior Web Developer"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "company": {
+                "$id": "#/properties/experience/properties/jobs/items/properties/company",
+                "type": "string",
+                "title": "Company Name",
+                "default": "",
+                "examples": [
+                  "Intelitec Solutions"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "description": {
+                "$id": "#/properties/experience/properties/jobs/items/properties/description",
+                "type": "string",
+                "title": "Job Description",
+                "default": "",
+                "examples": [
+                  "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring."
+                ],
+                "pattern": "^(.*)$"
+              },
+              "date": {
+                "$id": "#/properties/experience/properties/jobs/items/properties/date",
+                "type": "string",
+                "title": "Date of Experience",
+                "default": "",
+                "examples": [
+                  "March 2013 - Present"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "education": {
+      "$id": "#/properties/education",
+      "type": "object",
+      "title": "Education Section",
+      "required": [
+        "title",
+        "contents"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/properties/education/properties/title",
+          "type": "string",
+          "title": "Education Title",
+          "default": "",
+          "examples": [
+            "Education"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "contents": {
+          "$id": "#/properties/education/properties/contents",
+          "type": "array",
+          "title": "Education Experience",
+          "items": {
+            "$id": "#/properties/education/properties/contents/items",
+            "type": "object",
+            "title": "Course",
+            "required": [
+              "title",
+              "subtitle",
+              "description",
+              "grade",
+              "date"
+            ],
+            "properties": {
+              "title": {
+                "$id": "#/properties/education/properties/contents/items/properties/title",
+                "type": "string",
+                "title": "Course Title",
+                "default": "",
+                "examples": [
+                  "University of Colorado Boulder"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "subtitle": {
+                "$id": "#/properties/education/properties/contents/items/properties/subtitle",
+                "type": "string",
+                "title": "Course Subtitle",
+                "default": "",
+                "examples": [
+                  "Bachelor of Science"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "description": {
+                "$id": "#/properties/education/properties/contents/items/properties/description",
+                "type": "string",
+                "title": "Course Description",
+                "default": "",
+                "examples": [
+                  "Computer Science - Web Development Track"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "grade": {
+                "$id": "#/properties/education/properties/contents/items/properties/grade",
+                "type": "string",
+                "title": "Grade Achieved",
+                "default": "",
+                "examples": [
+                  "GPA: 3.23"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "date": {
+                "$id": "#/properties/education/properties/contents/items/properties/date",
+                "type": "string",
+                "title": "Course Date",
+                "default": "",
+                "examples": [
+                  "August 2006 - May 2010"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "skills": {
+      "$id": "#/properties/skills",
+      "type": "object",
+      "title": "Skills Section",
+      "required": [
+        "title",
+        "programming_languages",
+        "workflow"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/properties/skills/properties/title",
+          "type": "string",
+          "title": "Skills Section Title",
+          "default": "",
+          "examples": [
+            "Skills"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "programming_languages": {
+          "$id": "#/properties/skills/properties/programming_languages",
+          "type": "object",
+          "title": "Programming Languages Section",
+          "required": [
+            "title",
+            "contents"
+          ],
+          "properties": {
+            "title": {
+              "$id": "#/properties/skills/properties/programming_languages/properties/title",
+              "type": "string",
+              "title": "Programming Languages Section Title",
+              "default": "",
+              "examples": [
+                "Programming Languages & Tools"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "contents": {
+              "$id": "#/properties/skills/properties/programming_languages/properties/contents",
+              "type": "array",
+              "title": "Known Languages",
+              "items": {
+                "$id": "#/properties/skills/properties/programming_languages/properties/contents/items",
+                "type": "object",
+                "title": "Language",
+                "required": [
+                  "icon"
+                ],
+                "properties": {
+                  "icon": {
+                    "$id": "#/properties/skills/properties/programming_languages/properties/contents/items/properties/icon",
+                    "type": "string",
+                    "title": "Language Icon",
+                    "default": "",
+                    "examples": [
+                      "fa-html5"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "workflow": {
+          "$id": "#/properties/skills/properties/workflow",
+          "type": "object",
+          "title": "Workflow Section",
+          "required": [
+            "title",
+            "contents"
+          ],
+          "properties": {
+            "title": {
+              "$id": "#/properties/skills/properties/workflow/properties/title",
+              "type": "string",
+              "title": "Workflow Section Title",
+              "default": "",
+              "examples": [
+                "Workflow"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "contents": {
+              "$id": "#/properties/skills/properties/workflow/properties/contents",
+              "type": "array",
+              "title": "Workflow Icons",
+              "items": {
+                "$id": "#/properties/skills/properties/workflow/properties/contents/items",
+                "type": "object",
+                "title": "Workflow Icon",
+                "required": [
+                  "icon",
+                  "title"
+                ],
+                "properties": {
+                  "icon": {
+                    "$id": "#/properties/skills/properties/workflow/properties/contents/items/properties/icon",
+                    "type": "string",
+                    "title": "Icon",
+                    "default": "",
+                    "examples": [
+                      "fa-check"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "title": {
+                    "$id": "#/properties/skills/properties/workflow/properties/contents/items/properties/title",
+                    "type": "string",
+                    "title": "Title",
+                    "default": "",
+                    "examples": [
+                      "Mobile-First, Responsive Design"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "interests": {
+      "$id": "#/properties/interests",
+      "type": "object",
+      "title": "Interests Section",
+      "required": [
+        "title",
+        "paragraphs"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/properties/interests/properties/title",
+          "type": "string",
+          "title": "Interests Section Title",
+          "default": "",
+          "examples": [
+            "Interests"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "paragraphs": {
+          "$id": "#/properties/interests/properties/paragraphs",
+          "type": "array",
+          "title": "Interests",
+          "items": {
+            "$id": "#/properties/interests/properties/paragraphs/items",
+            "type": "object",
+            "title": "Paragraph",
+            "required": [
+              "content"
+            ],
+            "properties": {
+              "content": {
+                "$id": "#/properties/interests/properties/paragraphs/items/properties/content",
+                "type": "string",
+                "title": "Paragraph Text",
+                "default": "",
+                "examples": [
+                  "Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking."
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "awards": {
+      "$id": "#/properties/awards",
+      "type": "object",
+      "title": "Awards Section",
+      "required": [
+        "title",
+        "awards_list"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/properties/awards/properties/title",
+          "type": "string",
+          "title": "Awards Section Title",
+          "default": "",
+          "examples": [
+            "Awards & Certifications"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "awards_list": {
+          "$id": "#/properties/awards/properties/awards_list",
+          "type": "array",
+          "title": "Awards List",
+          "items": {
+            "$id": "#/properties/awards/properties/awards_list/items",
+            "type": "object",
+            "title": "Award",
+            "required": [
+              "icon",
+              "name",
+              "place",
+              "p_ending"
+            ],
+            "properties": {
+              "icon": {
+                "$id": "#/properties/awards/properties/awards_list/items/properties/icon",
+                "type": "string",
+                "title": "Award Icon",
+                "default": "",
+                "examples": [
+                  "fa-trophy"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "name": {
+                "$id": "#/properties/awards/properties/awards_list/items/properties/name",
+                "type": "string",
+                "title": "Award Name",
+                "default": "",
+                "examples": [
+                  "Google Analytics Certified Developer"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "place": {
+                "$id": "#/properties/awards/properties/awards_list/items/properties/place",
+                "type": "string",
+                "title": "Place of Award",
+                "default": "",
+                "examples": [
+                  "1", "2"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "p_ending": {
+                "$id": "#/properties/awards/properties/awards_list/items/properties/p_ending",
+                "type": "string",
+                "title": "Place Superscript Ending",
+                "default": "",
+                "examples": [
+                  "st", "nd", "rd"
+                ],
+                "pattern": "^(.*)$",
+                "required": "false"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
